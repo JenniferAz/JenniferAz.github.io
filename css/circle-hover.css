@@ -1,0 +1,188 @@
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 16px rgba(255,255,255,0.6),
+		0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+}
+.ch-img-1 { 
+	background-image: url(../img/1.jpg);
+}
+.ch-info {
+	position: absolute;
+	background: rgb(239,71,58);;
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	text-align:center;
+	padding-top:25px;
+	
+	
+}
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 20px;
+	margin: 0 10px;
+	padding: 25px 0 0 0;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+@media(max-width:600px) {
+	.ch-info h3 {
+		font-size: 7px;
+		letter-spacing: 2px;
+	}
+	.ch-info {
+		padding-top:5px;
+	}
+	
+}
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	transition: all 1s ease-in-out 0.4s;
+}
+
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 1px;
+	padding-top: 7px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+}
+.ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 1px rgba(255,255,255,0.1),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+.ch-item:hover .ch-info {
+	transform: scale(1);
+	opacity: 1;
+}
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
+/*
+*
+		Images for the circles
+		incluir background-image: url(../ ); para cada clase
+*
+*/
+.specification-img-1{
+	
+}
+.investigation-img-1{
+	background: url("../img/pop/User map.jpg");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.investigation-img-2{
+	background: url("../img/pop/LikertForeign.jpg");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.investigation-img-3{
+	background: url("../img/pop/observaciones.JPG");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.definition-img-1{
+	background: url("../img/pop/Experience Map Sabatini.jpg");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.definition-img-2{
+	background: url("../img/pop/JohnSmith.jpg");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.definition-img-3{
+	background: url("../img/pop/userJourney.JPG");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.ideation-img-1{
+	background: url("../img/pop/ExperienceMapFINAL.jpg");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.ideation-img-2{
+	background: url("../img/pop/Service Blueprint.jpg");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.specification-img-1{
+	background: url("../img/pop/userStories.JPG");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.information-img-1{
+	background: url("../img/pop/Wireframe1.jpg");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.information-img-2{
+	background: url("../img/pop/Mockup-page-002.jpg");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.information-img-3{
+	background: url("../img/pop/feedback.JPG");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
+.visualization-img-1{
+	background: url("../img/mock-ups (1).png");
+	background-size: 170px 170px;
+	background-repeat: no-repeat;
+}
