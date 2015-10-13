@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <title>SkipQueues - Service Design</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/coffee.ico" />
+        
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/grayscale.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/landing-page.css" rel="stylesheet">
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        
+        <link href="css/bootstrap-modal-carousel.css" rel="stylesheet" />
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="index.html">
+                        <i class="fa fa-coffee"></i>  <span class="light">Skip</span>Queues
+                    </a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li >
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a style="color: rgb(239,71,58);" href="./service-design.html">Service design</a>
+                        </li>
+                        <li>
+                            <a  href="./product-design.html">Product design</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    
+    
+        <!-- Header -->
+        <a name="about"></a>
+        <div class="intro-header2">
+            <div class="container" id="containerHeader">
+    
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Service design</h1>
+                            <h3>Redefining concepts</h3>
+                            <hr class="intro-divider">
+                            <div class="row">
+                                <a href="#content" class="btn btn-circle page-scroll">
+                                    <i class="fa fa-angle-double-down animated"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <!-- /.container -->
+    
+        </div>
+        <!-- /.intro-header -->
+    
+        <!-- Page Content -->
+    
+    	<a  name="services"></a>
+        <div class="content-section-b" id="content">
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading " style="color:rgb(51,51,51);">
+                            <a href="investigation.html" class="custom-link-right">Investigation <i class="fa fa-angle-right"></i></a>    
+                        </h2>
+                        <p class="lead">To become familiar with the context and find out the current service problems, the users hierarchy and their expectations and needs, different research techniques are carried out.</p>
+                        <p style="color:grey;"><a href="" data-toggle="modal" data-target="#users-map-modal">Users map</a> | 
+                        <a href="" data-toggle="modal" data-target="#questionnaires-modal">Questionnaires</a> | 
+                        <a href="" data-toggle="modal" data-target="#observation-modal">Observation notes</a>
+                    
+                    
+                        <!-- Modal users map -->
+                        <div class="modal fade" id="users-map-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title uc3m-modal" id="myModalLabel">Users Map</h4>
+                          </div>
+                          <div class="modal-body" style="text-align:center;">
+                           <img src="img/pop/User map.jpg" class="responsive" style="width:70%;">
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Modal Questionnaires -->
+                       <div class="modal fade" id="questionnaires-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title uc3m-modal" id="myModalLabel">Questionnaires</h4>
+                          </div>
+                          <div class="modal-body">
+                              <!-- Carousel Start-->
+                                <div id="myCarousel" class="carousel slide">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" style="text-align:center;">
+                                            
+                                           <h5 style="color:black; margin-top:10px;">Foreign Students</h5>
+                                           <div style="text-align:center; width:100%;">
+                                            <img src="img/pop/LikertForeign.jpg" class="responsive" style="width:100%;">
+                                           </div>
+                                        </div>
+                                        <div class="item" style="text-align:center;">
+                                            <h5 style="color:black; margin-top:10px;">Local Students</h5>
+                                           <div style="text-align:center; width:100%;">
+                                            <img src="img/pop/LikertEstudiante.jpg" class="responsive" style="width:100%;">
+                                           </div>
+                                           
+                                        </div>
+                                        <div class="item" style="text-align:center;">
+                                            <h5 style="color:black; margin-top:10px;">PDI and PAS</h5>
+                                           <div style="text-align:center; width:100%;">
+                                            <img src="img/pop/LikertPDIPAS.jpg" class="responsive" style="width:100%;">
+                                           </div>
+                                        </div>
+                                         <div class="item" style="text-align:center;">
+                                            <h5 style="color:black; margin-top:10px;">Employees</h5>
+                                           <div style="text-align:center; width:100%;">
+                                            <img src="img/pop/LikertEmpleados.jpg" class="responsive" style="width:100%;">
+                                           </div>
+                                        </div>
+                                        <div class="item" style="text-align:center;">
+                                            <h5 style="color:black; margin-top:10px;">Data treatment example</h5>
+                                           <div style="text-align:center; width:100%;">
+                                            <img src="img/pop/LikertEstudianteExcel.JPG" class="responsive" style="width:100%;">
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <!-- Carousel nav -->
+                                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                                </div>
+                                <!-- Carousel End -->
+                            
+                            
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                    <!-- Modal Observation notes -->
+                        <div class="modal fade" id="observation-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title uc3m-modal" id="myModalLabel">Observation Notes</h4>
+                          </div>
+                          <div class="modal-body uc3m-modal">
+                             
+                            <img src="img/pop/observaciones.JPG" class="responsive" style="width: 100%;">
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                                        
+        
+                    </div>
+                    <div class="col-lg-5  col-sm-6" >
+                        <img class="img-responsive" src="img/research.jpg" alt="">
+                    </div>
+                </div>
+    
+            </div>
+            <!-- /.container -->
+    
+        </div>
+        <!-- /.content-section-a -->
+    
+        <div class="content-section-a">
+    
+            <div class="container">
+    
+                <div class="row">
+                    <div class="col-lg-7 col-sm-push-5  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading" >
+                            <a href="definition.html" class="custom-link-left">Definition <i class="fa fa-angle-right"></i></a>
+                        </h2>
+                        <p class="lead" style="color:black;">After processing the data obtained from the investigation, analysis techniques, mainly based on activity and experience, are developed in order to interpret the results and divide the problem in smaller pieces.</p>
+                        <p style="color:rgb(51,51,51);"><a href="" data-toggle="modal" data-target="#experience-map-modal">Experience maps</a> | 
+                        <a href="" data-toggle="modal" data-target="#personas-modal" >Personas</a> | 
+                        <a href="" data-toggle="modal" data-target="#user-journey-modal">User journey maps</a>
+                    
+                    <!-- Modal Experience map -->
+                        <div class="modal fade modal-fullscreen force-fullscreen" id="experience-map-modal" tabindex="-1" role="dialog" 
+                        aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content" style="height:100%;">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title uc3m-modal" id="myModalLabel">Experience Maps</h4>
+                              </div>
+                              <div class="modal-body" style="margin-top:55px;">
+                            
+                                   <!-- Carousel Start-->
+                                    <div id="myCarousel2" class="carousel slide">
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="active item" style="text-align:center;">
+                                                
+                                               <h5 style="color:black; margin-top:10px;">Sabatini cafeteria</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/Experience Map Sabatini.jpg" class="responsive" style="width:100%;">
+                                               </div>
+                                            </div>
+                                            <div class="item" style="text-align:center;">
+                                                <h5 style="color:black; margin-top:10px;">Padre Soler cafeteria</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/Experience Map Padre Soler.jpg" class="responsive" style="width:100%;">
+                                               </div>
+                                              </div>
+                                           
+                                        </div>
+                                        <!-- Carousel nav -->
+                                        <a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+                                        <a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+                                    </div>
+                                    <!-- Carousel End -->
+                                
+                                
+                              </div>
+                              
+                        
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <!-- Modal Personas -->
+                       
+                    <div class="modal fade modal-fullscreen force-fullscreen" id="personas-modal" tabindex="-1" role="dialog" 
+                        aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content" style="height:100%;">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title uc3m-modal" id="myModalLabel">Personas</h4>
+                              </div>
+                              <div class="modal-body" style="margin-top:55px;">
+                            
+                                   <!-- Carousel Start-->
+                                    <div id="myCarousel3" class="carousel slide">
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="active item" style="text-align:center;">
+                                                
+                                               <h5 style="color:black; margin-top:10px;">Alicia Montero</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/AliciaMontero.jpg" class="responsive" style="width:100%;">
+                                               </div>
+                                            </div>
+                                            <div class="item" style="text-align:center;">
+                                                <h5 style="color:black; margin-top:10px;">Juan Herrera</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/JuanHerrera.jpg" class="responsive" style="width:100%;">
+                                               </div>
+                                            </div>
+                                             <div class="item" style="text-align:center;">
+                                                <h5 style="color:black; margin-top:10px;">John Smith</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/JohnSmith.jpg" class="responsive" style="width:100%;">
+                                               </div>
+                                            </div>
+                                             <div class="item" style="text-align:center;">
+                                                <h5 style="color:black; margin-top:10px;">Isabel Pérez</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/IsabelPerez.jpg" class="responsive" style="width:100%;">
+                                               </div>
+                                            </div>
+                                           
+                                        </div>
+                                        <!-- Carousel nav -->
+                                        <a class="carousel-control left" href="#myCarousel3" data-slide="prev">&lsaquo;</a>
+                                        <a class="carousel-control right" href="#myCarousel3" data-slide="next">&rsaquo;</a>
+                                    </div>
+                                    <!-- Carousel End -->
+                                
+                                
+                              </div>
+                              
+                        
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <!-- Modal User Journey -->
+                        
+            <div class="modal fade" id="user-journey-modal" tabindex="-1" role="dialog" 
+                        aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title uc3m-modal" id="myModalLabel">User Journey Maps</h4>
+                              </div>
+                              <div class="modal-body">
+                            
+                                   <!-- Carousel Start-->
+                                    <div id="myCarousel4" class="carousel slide">
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="active item" style="text-align:center;">
+                                                
+                                               <h5 style="color:black; margin-top:10px;">Alicia Montero</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/userjourneyAlicia.png" class="responsive" style="width:100%;">
+                                               </div>
+                                            </div>
+                                           
+                                             <div class="item" style="text-align:center;">
+                                                <h5 style="color:black; margin-top:10px;">John Smith</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/userjourneyJohn.png" class="responsive" style="width:100%;">
+                                               </div>
+                                            </div>
+                                             <div class="item" style="text-align:center;">
+                                                <h5 style="color:black; margin-top:10px;">Isabel Pérez</h5>
+                                               <div style="text-align:center; width:100%;">
+                                                <img src="img/pop/userjourneyIsabel.png" class="responsive" style="width:100%;">
+                                               </div>
+                                            </div>
+                                           
+                                        </div>
+                                        <!-- Carousel nav -->
+                                        <a class="carousel-control left" href="#myCarousel4" data-slide="prev">&lsaquo;</a>
+                                        <a class="carousel-control right" href="#myCarousel4" data-slide="next">&rsaquo;</a>
+                                    </div>
+                                    <!-- Carousel End -->
+                                
+                                
+                              </div>
+                              
+                        
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+            
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-7 col-sm-6">
+                        <img class="img-responsive" src="img/definition2.jpg" alt="">
+                    </div>
+                    
+                    
+                    
+                </div>
+    
+            </div>
+            <!-- /.container -->
+    
+        </div>
+        <!-- /.content-section-b -->
+    
+        <div class="content-section-b" id="content">
+    
+            <div class="container">
+                <div class="row" >
+                    <div class="col-lg-7 col-sm-6" >
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading" style="color:rgb(51,51,51);">
+                            <a href="ideation.html" class="custom-link-right">Ideation <i class="fa fa-angle-right"></i></a>
+                        </h2>
+                        <p class="lead">When the problem id finally defined, it's time to raise ideas leveraging various popular ideation techniques used in the service design world such as brainstorming and role-playing.</p>
+                        <p style="color:grey;"><a href="" data-toggle="modal" data-target="#experience-map2-modal">Final Experience map</a> | <a href="" data-toggle="modal" data-target="#blueprint-modal">Service blueprint</a></p>
+                    
+                    <!-- Modal Experience map -->
+                        <div class="modal fade modal-fullscreen force-fullscreen" id="experience-map2-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content" style="height:100%;">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title uc3m-modal" id="myModalLabel">Final Experience Map</h4>
+                          </div>
+                          <div class="modal-body" style="margin-top:65px;">
+                            <img class="img-responsive" src="img/pop/ExperienceMapFINAL.jpg" class="responsive">
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- Modal Service Blueprint -->
+                        <div class="modal fade" id="blueprint-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title uc3m-modal" id="myModalLabel">Service Blueprint</h4>
+                          </div>
+                          <div class="modal-body">
+                            <img class="img-responsive" src="img/pop/Service Blueprint.jpg" class="responsive" style="width: 100%;">
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  
+                    
+                    </div>
+                    <div class="col-lg-5 col-sm-6" >
+                        <img class="img-responsive" src="img/ideation.jpg" alt="">
+                    </div>
+                </div>
+    
+            </div>
+            <!-- /.container -->
+    
+        </div>
+        <!-- /.content-section-a -->
+        
+        <div class="content-section-a">
+    
+            <div class="container">
+    
+                <div class="row">
+                    <div class="col-lg-7  col-sm-push-5  col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading" >
+                            <a href="specification.html" class="custom-link-left">Specification <i class="fa fa-angle-right"></i></a>
+                        </h2>
+                        <p class="lead" style="color:black;">For the system to be consistent with the study carried on the requirements must be specified so that all the required functionalities are considered. The outputs of this step will be the inputs for the product design phase.</p>
+                        <p style="color:gb(51,51,51);"><a href="" data-toggle="modal" data-target="#user-stories-modal">User stories</a>  </p>
+                        
+                         <!-- Modal User Stories -->
+                        <div class="modal fade" id="user-stories-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title uc3m-modal" id="myModalLabel">User Stories</h4>
+                                  </div>
+                                  <div class="modal-body" style="color:black">
+                                    <h4 style="margin-bottom:0;margin-top:10px">JUAN HERRERA</h4>
+                                    <span style="color:red;font-weight: 900;">1.</span> Juan quiere encontrar un microondas fácilmente para calentar su comida en poco tiempo.
+                                    <br><span style="color:red;font-weight: 900;">2.</span> Juan desearía entender la interfaz del microondas fácilmente para no perder tiempo.
+                                    <br><span style="color:red;font-weight: 900;">3.</span> Juan necesita recibir descuentos para ahorrar dinero en las consumiciones.
+                                    <br><span style="color:red;font-weight: 900;">4.</span> Juan quiere encontrar un sitio disponible para comer tranquilamente.
+                                    <br><span style="color:red;font-weight: 900;">5.</span> Juan necesita tarjetas prepago para controlar sus gastos.
+                                    <br><span style="color:red;font-weight: 900;">6.</span> Juan quiere comparar precios de distintos productos para encontrar la opción más rentable dependiendo del día.
+                                    <br><span style="color:red;font-weight: 900;">7.</span> Juan necesita poder utilizar la máquina rápidamente para no sentirse presionado.
+                                    <h4 style="margin-bottom:0;margin-top:10px">ALICIA MONTERO</h4>
+                                    <span style="color:red;font-weight: 900;">1.</span> Alicia quiere entregar los tickets de pedidos en la barra en el Padre Soler de forma más organizada para perder menos tiempo y respetar el orden de llegada.
+                                    <br><span style="color:red;font-weight: 900;">2.</span> Alicia preferiría que realizar el pedido en la máquina sea suficientemente específico para no tener que repetirlo en la barra del Padre Soler.
+                                    <br><span style="color:red;font-weight: 900;">3.</span> Alicia necesita encontrar en el sistema de máquinas lo que quiere más rápidamente para no sentir presión.
+                                    <br><span style="color:red;font-weight: 900;">4.</span> Alicia necesita pedir con rapidez para comprar en los cambios de clase y no llegar tarde.
+                                    <br><span style="color:red;font-weight: 900;">5.</span> Alicia necesita poder distinguir sus pedidos para recogerlo sin confundirse con los de los demás.
+                                    <br><span style="color:red;font-weight: 900;">6.</span> Alicia quiere poder entender las fórmulas de desayuno y todas las posibilidades que tiene cuando va a la cafetería para desayunar.
+                                    <br><span style="color:red;font-weight: 900;">7.</span> Alicia quiere saber la información nutricional de los productos. 
+                                    <br><span style="color:red;font-weight: 900;">8.</span> Alicia quiere saber de antemano qué cafetería va a estar menos ocupada para ir directamente a esa.
+                                    <br><span style="color:red;font-weight: 900;">9.</span> Alicia precisa recibir recomendaciones sobre productos para probar cosas nuevas.
+                                    <br><span style="color:red;font-weight: 900;">10.</span> Alicia prefiere compartir sus opiniones acerca de los productos para socializarse.
+                                    <h4 style="margin-bottom:0;margin-top:10px">JOHN SMITH</h4>
+                                    <span style="color:red;font-weight: 900;">1.</span> John quiere tener la comida rápido para poder llegar pronto a clase y sin prisas.
+                                    <br><span style="color:red;font-weight: 900;">2.</span> John quisiera acceder a los detalles de cada producto para saber qué va a pedir exactamente.
+                                    <br><span style="color:red;font-weight: 900;">3.</span> John quiere tener una vista previa del producto final para saber qué es exactamente lo que va a pedir.
+                                    <br><span style="color:red;font-weight: 900;">4.</span> John desea poder comunicarse en inglés para poder hablar en el idioma que controla.
+                                    <br><span style="color:red;font-weight: 900;">5.</span> John quiere recibir información del funcionamiento del sistema de la cafetería para poder pedir por primera vez sin problemas.
+                                    <br><span style="color:red;font-weight: 900;">6.</span> John necesita saber la información nutricional de los productos para comer más variado.
+                                    <br><span style="color:red;font-weight: 900;">7.</span> A John le gustaría encontrar compañeros españoles para poder practicar idiomas.
+                                    <br><span style="color:red;font-weight: 900;">8.</span> John desearía tener a su disposición un mapa de la cafetería para encontrar las distintas zonas de la misma más rápido.
+                                    <br><span style="color:red;font-weight: 900;">9.</span> John desearía poder prescindir de la comunicación con los camareros para poder seleccionar bebida y menú sin que influya el idioma.
+                                  </div>
+                                </div>
+                             </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-5 col-sm-pull-7 col-sm-6">
+                        <img class="img-responsive" src="img/artsy/books.jpg" alt="">
+                    </div>
+                </div>
+    
+            </div>
+            <!-- /.container -->
+    
+        </div>
+        <!-- /.content-section-b -->
+    
+    	
+        <div class="banner ">
+    
+            <div class="container" style="text-align:center;">
+                <div class="row">
+                   <div class="col-lg-12">       
+                      <h2 style="font-size:36px; margin-bottom:10px; text-shadow: 2px 2px 50px rgba(0, 0, 0, 1);">Product design</h2>
+                      
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p style="margin-bottom:10px; text-shadow: 2px 2px 50px rgba(0, 0, 0, 1);">Learn more about the design of a mobile ordering application to avoid queues at peak times.</p>
+                    </div>
+                    
+                </div> 
+                
+                <div class="col-lg-12">    
+                        <a href="product-design.html" class="btn btn-circle page-scroll" id="buttonRight">
+                          <i class="fa fa-angle-double-right animated"></i>
+                        </a>
+                       
+                    </div>
+             
+    
+            </div>
+            <!-- /.container -->
+    
+        </div>
+        <!-- /.banner -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p id="footerText">&copy; 2015 SkipQueues</p>
+            </div>
+        </footer>
+    
+        <!-- jQuery -->
+        <script defer src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script defer src="js/bootstrap.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script defer src="js/jquery.easing.min.js"></script>
+        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+
+        <!-- Custom Theme JavaScript -->
+        <script defer src="js/grayscale.js"></script>
+        
+        <script defer src="js/bootstrap-modal-carousel.js"></script>
+        <script defer src="js/carousel-fit.js"></script>
+        <script defer src="js/demo.min.js"></script>
+    </body>
+</html>
